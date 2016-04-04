@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../ue/hdr/common/common.h
+stdint.h
+-
+string.h
+-
+
+../ue/hdr/common/msg_queue.h
+common/common.h
+../ue/hdr/common/common/common.h
+boost/thread/mutex.hpp
+-
+boost/thread/condition.hpp
+-
+
+/home/tysonv7/srsUE/ue/test/common/msg_queue_test.cc
+stdio.h
+-
+common/msg_queue.h
+/home/tysonv7/srsUE/ue/test/common/common/msg_queue.h
+

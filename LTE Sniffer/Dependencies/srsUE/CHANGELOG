@@ -1,0 +1,10 @@
+Change Log for Releases
+==============================
+
+## 001.001.000
+* Added support for BladeRF
+* Added paging support, RRC reconnection
+* Improved overall stability
+* Calibrated RF front-end time advances
+* Bugfix: PDCP SN size config bug for AM
+* Bugfix: Added RRC Connection setup defaults

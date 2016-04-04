@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../ue/hdr/common/threads.h
+pthread.h
+-
+stdint.h
+-
+
+/home/tysonv7/srsUE/ue/src/common/threads.c
+errno.h
+-
+pthread.h
+-
+stdio.h
+-
+stdbool.h
+-
+string.h
+-
+sys/types.h
+-
+common/threads.h
+/home/tysonv7/srsUE/ue/src/common/common/threads.h
+

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../ue/hdr/common/logger.h
+stdio.h
+-
+string
+-
+boost/shared_ptr.hpp
+-
+boost/thread/mutex.hpp
+-
+boost/thread/condition.hpp
+-
+boost/circular_buffer.hpp
+-
+
+/home/tysonv7/srsUE/ue/test/common/logger_test.cc
+stdio.h
+-
+common/logger.h
+/home/tysonv7/srsUE/ue/test/common/common/logger.h
+

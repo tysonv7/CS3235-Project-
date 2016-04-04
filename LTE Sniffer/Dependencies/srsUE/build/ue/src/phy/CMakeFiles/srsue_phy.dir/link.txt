@@ -1,0 +1,2 @@
+/usr/bin/ar cr libsrsue_phy.a  CMakeFiles/srsue_phy.dir/phch_worker.cc.o CMakeFiles/srsue_phy.dir/prach.cc.o CMakeFiles/srsue_phy.dir/phch_recv.cc.o CMakeFiles/srsue_phy.dir/phch_common.cc.o CMakeFiles/srsue_phy.dir/phy.cc.o
+/usr/bin/ranlib libsrsue_phy.a
