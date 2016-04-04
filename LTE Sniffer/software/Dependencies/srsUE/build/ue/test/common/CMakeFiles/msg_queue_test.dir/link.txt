@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -O3 -march=native -mfpmath=sse -mavx -DLV_HAVE_AVX -DLV_HAVE_SSE -O3 -DNDEBUG    CMakeFiles/msg_queue_test.dir/msg_queue_test.cc.o  -o msg_queue_test -rdynamic ../../src/common/libsrsue_common.a -lboost_program_options -lboost_system -lboost_date_time -lboost_thread -lpthread 

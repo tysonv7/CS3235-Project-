@@ -1,0 +1,2 @@
+/usr/bin/ar cr liblte.a  CMakeFiles/lte.dir/src/liblte_common.cc.o CMakeFiles/lte.dir/src/liblte_rrc.cc.o CMakeFiles/lte.dir/src/liblte_mme.cc.o CMakeFiles/lte.dir/src/liblte_security.cc.o
+/usr/bin/ranlib liblte.a
