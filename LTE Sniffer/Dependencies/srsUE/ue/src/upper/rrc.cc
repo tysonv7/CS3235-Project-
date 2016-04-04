@@ -207,8 +207,8 @@ void rrc::write_pdu_bcch_dlsch(byte_buffer_t *pdu)
       std::stringstream ss;
       for(int i=0;i<sib1.N_plmn_ids;i++){
         ss << " PLMN Id: MCC " << sib1.plmn_id[i].id.mcc << " MNC " << sib1.plmn_id[i].id.mnc;
-        output << "MCC: " << sib1.plmn_id[i].id.mcc;
-        output << ", MNC: " << sib1.plmn_id[i].id.mnc;
+        output << "MCC " << sib1.plmn_id[i].id.mcc;
+        output << ", MNC " << sib1.plmn_id[i].id.mnc;
       }
       rrc_log->console("SIB1 received, CellID=%d, %s\n",
                        sib1.cell_id&0xfff,

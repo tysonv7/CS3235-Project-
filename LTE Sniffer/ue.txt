@@ -1,1 +1,1 @@
-MCC: 525, MNC: 1
+MCC 525, MNC 1

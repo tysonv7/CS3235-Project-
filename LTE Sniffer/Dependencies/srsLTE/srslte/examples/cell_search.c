@@ -272,7 +272,7 @@ int main(int argc, char **argv) {
            results[i].cell.nof_ports, 
            10*log10(results[i].power));
      //Printing details to txtfile     
-    fprintf(fp, "Frequency %.1f, PHYSICALCELLID %d, PSS Power %.1f dBm\n", results[i].freq, results[i].dl_earfcn, results[i].cell.id, 10*log10(results[i].power));
+    fprintf(fp, "Frequency %.1f, PHYSICALCELLID %d, PSS Power %.1f\n", results[i].freq, results[i].dl_earfcn, results[i].cell.id, 10*log10(results[i].power));
 
   }
   
