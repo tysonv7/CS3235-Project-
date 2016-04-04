@@ -1,2 +1,0 @@
-/usr/bin/ar cr libsrsue_radio.a  CMakeFiles/srsue_radio.dir/radio.cc.o
-/usr/bin/ranlib libsrsue_radio.a

@@ -1,1 +1,0 @@
-/usr/bin/c++    -fPIC -O3 -march=native -mfpmath=sse -mavx -DLV_HAVE_AVX -DLV_HAVE_SSE -O3 -DNDEBUG    CMakeFiles/log_filter_test.dir/log_filter_test.cc.o  -o log_filter_test -rdynamic ../../src/common/libsrsue_common.a -lboost_program_options -lboost_system -lboost_date_time -lboost_thread -lpthread 
