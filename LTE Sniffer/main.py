@@ -48,8 +48,8 @@ class LTE_Sniffer(App):
 
     def _on_keyboard_down(self, keyboard, keycode, text, modifiers):
         if keycode[1] == 'u':
+            subprocess.call['FileToCSV.sh']
             os.execl(sys.executable, sys.executable, *sys.argv)
-##            subprocess.call['./FileToCSv.sh']
         return True
     
 if __name__ == '__main__':
