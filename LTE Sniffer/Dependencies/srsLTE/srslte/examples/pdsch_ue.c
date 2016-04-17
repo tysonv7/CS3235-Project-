@@ -39,7 +39,6 @@
 
 #include "srslte/srslte.h"
 
-
 #ifndef DISABLE_RF
 #include "srslte/rf/rf.h"
 #include "srslte/rf/rf_utils.h"
@@ -49,6 +48,10 @@ cell_search_cfg_t cell_detect_config = {
   200, // nof_frames_total 
   10.0 // threshold
 };
+
+//Initialise file pointer
+FILE *fp;
+
 #else
 #warning Compiling pdsch_ue with no RF support
 #endif
@@ -265,6 +268,9 @@ cf_t *sf_buffer = NULL;
 srslte_netsink_t net_sink, net_sink_signal; 
 
 int main(int argc, char **argv) {
+	
+  //Modify: Initialise frequency database
+  fp = fopen("database.txt","a");
   int ret; 
   srslte_cell_t cell;  
   int64_t sf_cnt;
@@ -497,6 +503,8 @@ int main(int argc, char **argv) {
              // fprintf(stderr, "Error decoding UE DL\n");fflush(stdout);
             } else if (n > 0) {
               /* Send data if socket active */
+              //fprintf(fp, srslte_vec_fprint_byte(stdout, data, n/8));
+              srslte_vec_fprint_byte(fp, data, n/8);
               if (prog_args.net_port > 0) {
                 srslte_netsink_write(&net_sink, data, 1+(n-1)/8);
               }
